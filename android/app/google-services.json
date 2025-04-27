@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "325726111762",
+    "firebase_url": "https://employee-management-97d17-default-rtdb.firebaseio.com",
+    "project_id": "employee-management-97d17",
+    "storage_bucket": "employee-management-97d17.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325726111762:android:61768cfee5227c532df0cb",
+        "android_client_info": {
+          "package_name": "com.example.employee_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_w9H62eYnYgnXeMek5D_psVUwUaeG0Tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
