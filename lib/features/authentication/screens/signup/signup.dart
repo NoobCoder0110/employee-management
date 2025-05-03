@@ -55,7 +55,7 @@ class SignupScreen extends StatelessWidget {
               ),
               DropdownMenu(
                 dropdownMenuEntries: [
-                  DropdownMenuEntry(value: "empolyee", label: "Employee"),
+                  DropdownMenuEntry(value: "employee", label: "Employee"),
                 ],
                 onSelected: (value) {
                   signupController.employeeTypeController.text =

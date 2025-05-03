@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 import 'features/authentication/screens/signin/signin.dart';
 import 'features/authentication/screens/signup/signup.dart';
 
-class splashscreen extends StatelessWidget {
-  const splashscreen({super.key});
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

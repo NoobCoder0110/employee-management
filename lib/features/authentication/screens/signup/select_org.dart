@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:employee_management/features/authentication/controllers/signup/signup_controller.dart';
 import 'package:employee_management/features/authentication/screens/signup/signup.dart';
 import 'package:employee_management/utils/constants/colors.dart';
@@ -54,10 +56,12 @@ class SelectOrgScreen extends StatelessWidget {
                             var company = filterList[index];
                             return Obx(
                               () {
-                                RxBool isSelected = (company['company-id'] ==
-                                        signupController
-                                            .selectedCompanyId.value)
-                                    .obs;
+                                // Compare the organization ID with the selectedOrganizationId from the controller
+                                bool isSelected = company.id ==
+                                    signupController.selectedCompanyId.value;
+
+                                log(company.id);
+
                                 return ListTile(
                                   leading: ClipRRect(
                                     borderRadius: BorderRadius.circular(100),
@@ -74,17 +78,15 @@ class SelectOrgScreen extends StatelessWidget {
                                     ),
                                   ),
                                   title: Text(company['name']),
-                                  tileColor: isSelected.value
-                                      ? Colors.blue.shade100
-                                      : null,
+                                  tileColor:
+                                      isSelected ? Colors.blue.shade100 : null,
                                   selectedTileColor: Colors.blue.shade200,
                                   onTap: () {
+                                    // Update the selected organization in the controller
                                     signupController.selectedCompanyId.value =
-                                        company['company-id'];
-
+                                        company.id;
                                     signupController.selectedCompanyImage
                                         .value = company['logo'];
-
                                     signupController.selectedCompanyName.value =
                                         company['name'];
                                   },

@@ -23,7 +23,7 @@ class SignupController extends GetxController {
   var isOrganizationLoading = false.obs;
   RxString errorMessage = "".obs;
   RxString searchText = "".obs;
-  RxInt selectedCompanyId = 0.obs;
+  RxString selectedCompanyId = "".obs;
   RxString selectedCompanyName = "".obs;
   RxString selectedCompanyImage = "".obs;
 
